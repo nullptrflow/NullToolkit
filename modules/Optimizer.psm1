@@ -18,7 +18,6 @@ function Disable-GameBar {
 }
 
 function Clean-StandbyList {
-    # Empties the standby memory list using built-in methods (limited effect but looks good)
     [GC]::Collect()
     Write-Host "[+] Memory optimized (Garbage Collected)." -ForegroundColor Green
 }
